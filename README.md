@@ -1,6 +1,6 @@
 # MC68MH360 Board
 
-[tomstorey / c1600re](https://github.com/tomstorey/c1600re) serial loader modification for MC68MH360 telecom board.
+[tomstorey / c1600re](https://github.com/tomstorey/c1600re/tree/master/source/serial_bootloader) serial loader modification for MC68MH360 telecom board.
 
  
 ## Pictures
