@@ -17,15 +17,14 @@ SCC3 modification
 
 ## Serial loader
 
+~~~
 >python3 loader3.py -b0x2002000 -e0x2002400 bmbinary.rom
->
->Waiting for serial loader availability: OK
->
->Loading 1264 bytes to 0x02002000: Done in 0.107s
->
->Executing from 0x02002400: OK
->
->============================================================
+Waiting for serial loader availability: OK
+Loading 1264 bytes to 0x02002000: Done in 0.107s
+Executing from 0x02002400: OK
+
+============================================================
+~~~
 
 
 ##  Board schematics
