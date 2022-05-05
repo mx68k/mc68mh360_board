@@ -5,7 +5,7 @@
  
 ## Pictures
 
-MC68MH360 board with SCC3 modification.
+MC68MH360 board
 
 ![MC68MH360 board](/b_1.jpg)
 
