@@ -77,43 +77,43 @@ init_memory_params(void)
      * PLL, as the external peripherals must be accessible to read the CPU
      * speed strap.
     */
-    MCR = 0x00007FFF; // MODULE_BASE + 0000
+    MCR = 0x00007FFF; // REGB + 0000
 
     /* Configure DRAM memory interface parameters */
  //   PEPAR = 0x07C0;
-	PEPAR = 0x0A0; // MODULE_BASE + 0016
+	PEPAR = 0x0A0; // REGB + 0016
  //   GMR = 0x07840180;
-	GMR = 0x178c0000; // MODULE_BASE + 0040
+	GMR = 0x178c0000; // REGB + 0040
 
     /* CS3/ to map external peripherals at 0x0D000000-0D0FFFFF (1MB) */
-    //OR3 = 0xFFF00006; // MODULE_BASE + 0084
-    //BR3 = 0x0D000001; // MODULE_BASE + 0080
+    //OR3 = 0xFFF00006; // REGB + 0084
+    //BR3 = 0x0D000001; // REGB + 0080
 
     /* CS4/ to map PCMCIA at 0x08000000-09FFFFFF (32MB) */
-    //OR4 = 0xFE000006; // MODULE_BASE + 0094
-    //BR4 = 0x08000001; // MODULE_BASE + 0090
+    //OR4 = 0xFE000006; // REGB + 0094
+    //BR4 = 0x08000001; // REGB + 0090
 
     /* CS7/ to map NVRAM at 0x0E000000-0E007FFF (32KB) */
-    //OR7 = 0x6FFF8004; // MODULE_BASE + 00c4
-    //BR7 = 0x0E000001; // MODULE_BASE + 00c0
+    //OR7 = 0x6FFF8004; // REGB + 00c4
+    //BR7 = 0x0E000001; // REGB + 00c0
 
     /* CS0/ map boot ROMs at 0x04000000-0403FFFF (512KB) */
-    //BR0 = 0x04000003; // MODULE_BASE + 0050
-    //OR0 = 0x5FC00002; // MODULE_BASE + 0054
-	BR0 = 0x04000001; // MODULE_BASE + 0050 
-    OR0 = 0x4FF80004; // MODULE_BASE + 0054
+    //BR0 = 0x04000003; // REGB + 0050
+    //OR0 = 0x5FC00002; // REGB + 0054
+	BR0 = 0x04000001; // REGB + 0050 
+    OR0 = 0x4FF80004; // REGB + 0054
 	
 	/* CS1/ map SRAMs at 0x02000000-0207FFFF (512KB) */
-    //BR1 = 0x04000003; // MODULE_BASE + 0050
-    //OR1 = 0x5FC00002; // MODULE_BASE + 0054
-    BR1 = 0x02000001; // MODULE_BASE + 0060
-    OR1 = 0x3FF80000; // MODULE_BASE + 0064
+    //BR1 = 0x04000003; // REGB + 0050
+    //OR1 = 0x5FC00002; // REGB + 0054
+    BR1 = 0x02000001; // REGB + 0060
+    OR1 = 0x3FF80000; // REGB + 0064
 	
     /* CS5/ and CS6/ map onboard RAM at 0x02000000-027FFFFF (8MB) */
-    //BR5 = 0x02000001; // MODULE_BASE + 00a0
-    //OR5 = 0x1FC00001; // MODULE_BASE + 00a4
-    //BR6 = 0x02400001; // MODULE_BASE + 00b0
-    //OR6 = 0x1FC00001; // MODULE_BASE + 00b4
+    //BR5 = 0x02000001; // REGB + 00a0
+    //OR5 = 0x1FC00001; // REGB + 00a4
+    //BR6 = 0x02400001; // REGB + 00b0
+    //OR6 = 0x1FC00001; // REGB + 00b4
 	
 //050 = 1;
 //054 = 0x4ff80004;
